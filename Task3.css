@@ -1,0 +1,40 @@
+#r {
+            padding-left:500px;
+}
+#s {
+    padding-left: 725px;
+    color:  palevioletred;
+}
+#u {
+    padding-left: 700px;
+    color: black;
+}
+#t {
+  
+    text-align: center;
+    color: black;
+}
+#v {
+    table {
+    width: 500px;
+    /* margin: auto; */
+    margin-left:500px;
+    border:2px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+td {
+    background-color: rgb(255, 0, 102);
+    color: white;
+    padding: 15px;
+    width: 200px;
+    border:2px solid black;
+    /* text-align: center; */
+    
+    font-weight: bold;
+    text-align: center;
+}
+}
+#e{
+    height:50px;
+}

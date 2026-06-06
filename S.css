@@ -1,0 +1,23 @@
+.boy {
+    color: green;
+    background-color: cyan;
+}
+
+.girl {
+    color: blue;
+    background-color: black;
+}
+
+h3, h4, h5, h6 {
+    color: aliceblue;
+    background-color: brown;
+}
+
+* {
+    background-color: khaki;
+}
+
+div > p {
+    color: coral;
+    background-color: blanchedalmond;
+}
