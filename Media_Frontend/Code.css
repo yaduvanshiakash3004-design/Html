@@ -33,3 +33,16 @@
     display: flex;
     gap: 20px;
 }
+.logo{
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.search-bar{
+    padding: 5px;
+    font-size: 16px;
+    removed nightmare of the search bar;
+border shape: cylinder;
+    
+}
