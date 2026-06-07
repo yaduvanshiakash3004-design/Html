@@ -1,0 +1,35 @@
+.menu-icon{
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.article-img{
+    width: 200px;
+    height: auto;
+    object-fit: cover;
+    float: right;
+    margin-left: 16px;
+    position: relative;
+    top: -45px;
+}
+.article-card{
+    width: 800px;
+    margin-left: 350px;
+}
+
+.article-img{
+    float: right;
+    width: 200px;
+    height: auto;
+}
+
+.article-title{
+    margin-top: 20px;
+}
+.article-content{
+    width: 700px;
+}
+.navlinks{
+    display: flex;
+    gap: 20px;
+}
