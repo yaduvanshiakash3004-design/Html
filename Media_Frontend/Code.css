@@ -149,6 +149,7 @@ body{
 
 .rightbar h2{
     margin-bottom:20px;
+    color: lightslategray;
 }
 
 .pick{
@@ -172,7 +173,8 @@ body{
     border-radius:20px;
 }
 .membership{
-    align-items: center;
+    text-align: center;
+    border-color: azure;
 
 
 }
