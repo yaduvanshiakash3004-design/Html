@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Canva UI</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <link rel="stylesheet" href="Canva.css">
+</head>
+<body>
+
+<nav class="navbar px-3 text-dark topbar bg-blue border-bottom justify-content-between"> 
+  <div class="d-flex align-items-center gap-3 fs-7 text-secondary">
+    <span class="text-dark fw-medium pointer">File</span>
+    <span class="pointer">Resize</span>
+    <span class="pointer text-dark"><i class="bi bi-pencil fs-7 me-1"></i>Editing <i class="bi bi-chevron-down small-icon"></i></span>
+    <span class="ms-2 text-muted">|</span>
+    <span class="pointer"><i class="bi bi-arrow-left-short fs-5"></i></span>
+    <span class="pointer text-muted"><i class="bi bi-arrow-right-short fs-5"></i></span>
+    <span class="badge bg-light text-dark border rounded-pill px-2 py-1 align-middle position-relative pointer">
+      Cloud 
+    </span>
+  </div>
+  
+  <div class="d-flex align-items-center gap-3">
+    <span class="text-secondary small fw-medium">Sample</span>
+    <button class="btn btn-warning-premium btn-sm rounded px-3 fw-bold"><i class="bi bi-crown-fill me-1"></i>Start your trial for ₹0</button>
+    <div class="avatar-circle pointer"></div>
+    <span class="text-secondary pointer"><i class="bi bi-bar-chart-steps fs-5"></i></span>
+    <span class="text-secondary pointer"><i class="bi bi-chat-left-text fs-5"></i></span>
+    <button class="btn btn-light border btn-sm px-3 rounded fw-medium">Present <i class="bi bi-chevron-down small-icon ms-1"></i></button>
+    <button class="btn btn-purple btn-sm px-3 rounded fw-medium text-white ms-1">Share</button>
+  </div>
+</nav>
+
+<div class="container-fluid app-body p-0">
+  <div class="d-flex h-100 w-100 m-0 position-relative">
+
+    <div class="sidebar bg-white border-end">
+      <div class="menu d-flex flex-column align-items-center text-center gap-1 pt-2">
+        <div class="menu-item text-secondary active">
+          <i class="bi bi-layout-text-window-reverse fs-5"></i>
+          <p class="menu-text mb-0">Templates</p>
+        </div>
+        <div class="menu-item text-secondary">
+          <i class="bi bi-grid-1x2 fs-5"></i>
+          <p class="menu-text mb-0">Elements</p>
+        </div>
+        <div class="menu-item text-secondary">
+          <i class="bi bi-type fs-4"></i>
+          <p class="menu-text mb-0">Text</p>
+        </div>
+        <div class="menu-item text-secondary position-relative">
+          <i class="bi bi-award fs-5"></i>
+          <p class="menu-text mb-0">Brand</p>
+          <i class="bi bi-crown-fill gold-crown position-absolute"></i>
+        </div>
+        <div class="menu-item text-secondary">
+          <i class="bi bi-cloud-arrow-up fs-5"></i>
+          <p class="menu-text mb-0">Uploads</p>
+        </div>
+        <div class="menu-item text-secondary">
+          <i class="bi bi-pencil-scale fs-5"></i>
+          <p class="menu-text mb-0">Tools</p>
+        </div>
+        <div class="menu-item text-secondary">
+          <i class="bi bi-folder2 fs-5"></i>
+          <p class="menu-text mb-0">Projects</p>
+        </div>
+        <div class="menu-item text-secondary">
+          <i class="bi bi-grid-3x3-gap fs-5"></i>
+          <p class="menu-text mb-0">Apps</p>
+        </div>
+      </div>
+    </div> 
+
+    <div class="side-drawer p-3 position-relative">
+      <div class="input-group mb-3 border rounded-pill bg-white px-2 py-1 align-items-center shadow-xs">
+        <span class="text-muted ms-2 fs-5">＋</span>
+        <input type="text" class="form-control border-0 bg-transparent fs-7" placeholder="Describe your ideal design">
+        <span class="text-muted me-2"><i class="bi bi-mic-fill"></i></span>
+      </div>
+
+      <div class="d-flex gap-2 mb-2">
+        <button class="btn btn-outline-light border text-dark btn-sm w-50 fw-medium shadow-sm d-flex align-items-center justify-content-center gap-1">
+          <i class="bi bi-stars text-purple"></i> Generate
+        </button>
+        <button class="btn btn-purple btn-sm w-50 fw-medium text-white">Search</button>
+      </div>
+
+      <div class="mb-3">
+        <label for="imageUploadInput" class="btn btn-light border btn-sm w-100 text-secondary fw-medium py-2 shadow-xs d-flex align-items-center justify-content-center gap-2 pointer">
+          <i class="bi bi-image"></i> Add Image File
+        </label>
+        <input type="file" id="imageUploadInput" accept="image/*" class="d-none">
+      </div>
+
+      <div class="d-flex justify-content-between align-items-center mt-4 mb-2">
+        <h6 class="fw-bold small mb-0 text-dark">Recently used</h6>
+        <span class="text-muted font-11 pointer">See all</span>
+      </div>
+      
+      <div class="d-flex gap-2 mb-4">
+        <div class="thumb img-placeholder">
+          <img src="5.jpeg" alt="Recent 1">
+        </div>
+        <div class="thumb img-placeholder-presentation">
+          <img src="7.jpeg" alt="Recent 2">
+        </div>
+      </div>
+
+      <h6 class="mt-3 fw-bold small text-dark mb-2">All results</h6>
+      <div class="row row-cols-2 g-2">
+        <div class="col">
+          <div class="thumb-grid img-card">
+            <img src="9.jpeg" alt="Result 1">
+          </div>
+        </div>
+        <div class="col">
+          <div class="thumb-grid img-card">
+            <img src="1.jpeg" alt="Result 2">
+          </div>
+        </div>
+        <div class="col">
+          <div class="thumb-grid img-card">
+            <img src="2.jpeg" alt="Result 3">
+          </div>
+        </div>
+        <div class="col">
+          <div class="thumb-grid img-card">
+            <img src="3.jpeg" alt="Result 4">
+          </div>
+        </div>
+        <div class="col">
+          <div class="thumb-grid img-card">
+            <img src="5.jpeg" alt="Result 5">
+          </div>
+        </div>
+        <div class="col">
+          <div class="thumb-grid img-card">
+            <img src="8.jpeg" alt="Result 6">
+          </div>
+        </div>
+      </div>
+
+      <div class="drawer-toggle-btn position-absolute top-50 translate-middle-y border shadow-sm bg-white pointer d-flex align-items-center justify-content-center">
+        <i class="bi bi-chevron-left text-muted font-11"></i>
+      </div>
+    </div>
+
+    <div class="workspace p-4 flex-grow-1">
+
+      <div class="toolbar bg-white shadow-sm rounded border px-3 py-1 mb-4 d-flex align-items-center gap-3 font-13">
+        <span class="fw-medium text-dark border-end pe-2 pointer">Edit</span> 
+        <div class="color-indicator pointer"></div>
+        <span class="pointer"><i class="bi bi-list"></i></span>
+        <span class="pointer"><i class="bi bi-border-style"></i></span>
+        <span class="pointer border-end pe-3 text-muted"><i class="bi bi-checkerboard"></i></span>
+        <span class="pointer fw-medium text-secondary">Effects</span> 
+        <span class="pointer fw-medium text-secondary">Animate</span> 
+        <span class="pointer fw-medium text-secondary border-end pe-3">Position</span>
+        <span class="pointer text-secondary"><i class="bi bi-paint-bucket"></i></span>
+      </div>
+
+      <div class="canvas bg-white position-relative">
+        <div class="shape circle"></div>
+        <div class="shape square"></div>
+        <div class="shape triangle"></div>
+        <div class="shape pentagon"></div>
+
+        <div class="shape plus"></div>
+        <div class="shape parallelogram"></div>
+        <div class="shape arrow"></div>
+        
+        <div class="selected-bounding-box position-relative shape">
+          <div class="floating-mini-bar border shadow-sm rounded bg-white p-1 d-flex align-items-center gap-2 font-13 text-secondary">
+            <i class="bi bi-lock pointer"></i>
+            <i class="bi bi-copy pointer"></i>
+            <i class="bi bi-trash pointer"></i>
+            <i class="bi bi-three-dots pointer"></i>
+          </div>
+          
+          <div class="shape heart w-100 h-100 m-0"></div>
+          
+          <div class="handle top-left"></div>
+          <div class="handle top-right"></div>
+          <div class="handle bottom-left"></div>
+          <div class="handle bottom-right"></div>
+          <div class="handle side-top"></div>
+          <div class="handle side-bottom"></div>
+          <div class="handle side-left"></div>
+          <div class="handle side-right"></div>
+          
+          <div class="rotation-handle shadow-sm bg-white border rounded-circle d-flex align-items-center justify-content-center">
+            <i class="bi bi-arrow-counterclockwise font-11 text-dark"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="bottom-bar">
+        <div class="bottom-left">
+          <button><i class="bi bi-pencil-square me-1"></i> Notes</button>
+          <button><i class="bi bi-clock me-1"></i> Timer</button>
+        </div>
+        
+        <div class="bottom-center">
+          <div class="page-selector border rounded d-flex align-items-center justify-content-center bg-light font-10 fw-bold position-relative shadow-sm">
+            <div class="mini-shapes-grid p-1">
+              <div class="mini-dot color-lime"></div>
+              <div class="mini-dot color-yellow"></div>
+              <div class="mini-dot color-orange"></div>
+              <div class="mini-dot color-blue"></div>
+            </div>
+            <span class="position-absolute bottom-0 start-0 bg-dark text-white font-8 px-1 rounded-end">1</span>
+          </div>
+          <button class="border rounded bg-light ms-2 px-2 py-1 text-muted"><i class="fa-solid fa-plus font-11"></i></button>
+          <button class="border rounded bg-light px-2 py-1 text-muted"><i class="fa-solid fa-chevron-down font-10"></i></button>
+        </div>
+        
+        <div class="bottom-right">
+          <input type="range" min="10" max="200" value="53" class="custom-range">
+          <span class="fw-medium text-dark font-12 ms-1">53%</span>
+          <button class="ms-2 border rounded bg-light px-2 py-1 text-secondary font-12 fw-medium"><i class="fa-regular fa-clone font-11 me-1"></i> Pages</button>
+          <span class="text-dark font-12 ms-1 fw-medium">1 / 1</span>
+          <button class="text-muted ms-1"><i class="fa-solid fa-table-cells font-12"></i></button>
+          <button class="text-muted"><i class="fa-solid fa-expand font-12"></i></button>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+</body>
+</html>
