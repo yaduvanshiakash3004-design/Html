@@ -3,17 +3,17 @@ let totalRows = 2 * N - 1;
 
 for (let r = 1; row <= totalRows; r++) {
     let v = 0;
-    if (row <= N) {
-        v = row;
+    if (r <= N) {
+        v = r;
     } else {
-        v = totalRows - row + 1;
+        v = totalRows - r + 1;
     }
     
     let rowStr = "";
 
     let leftLength = v;
     for (let j = 0; j < leftLength; j++) {
-        if (row <= N) {
+        if (r <= N) {
             if (j % 2 === 0) {
                 rowStr += v + " ";
             } else {
