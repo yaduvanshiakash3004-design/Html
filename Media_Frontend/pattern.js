@@ -1,7 +1,7 @@
 let N = 5;
 let totalRows = 2 * N - 1;
 
-for (let row = 1; row <= totalRows; row++) {
+for (let r = 1; row <= totalRows; r++) {
     let v = 0;
     if (row <= N) {
         v = row;
