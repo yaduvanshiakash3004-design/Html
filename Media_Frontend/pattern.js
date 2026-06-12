@@ -1,51 +1,68 @@
 let N = 5;
-let totalRows = 2 * N - 1;
+let tr = 2 * N - 1;
 
-for (let r = 1; row <= totalRows; r++) {
+for (let row = 1; row <= tr; row++) 
+    {
     let v = 0;
-    if (r <= N) {
-        v = r;
+    if (row <= N) 
+        {
+        v = row;
     } else {
-        v = totalRows - r + 1;
+        v = tr - row + 1;
     }
     
     let rowStr = "";
 
     let leftLength = v;
-    for (let j = 0; j < leftLength; j++) {
-        if (r <= N) {
-            if (j % 2 === 0) {
-                rowStr += v + " ";
-            } else {
-                rowStr += (10 - v) + " ";
+    for (let j = 0; j < leftLength; j++) 
+        {
+        if (row <= N) 
+            {
+            if (j % 2 === 0) 
+                {
+                rowStr = rowStr + v + " ";
+            } else 
+                {
+                rowStr = rowStr + (10 - v) + " ";
             }
-        } else {
-            if (j % 2 === 0) {
-                rowStr += (10 - v) + " ";
-            } else {
-                rowStr += v + " ";
+        } else 
+            {
+            if (j % 2 === 0) 
+                {
+                rowStr = rowStr + (10 - v) + " ";
+            } else 
+                {
+                rowStr = rowStr+ v + " ";
             }
         }
     }
 
     let spaces = (N - v) * 2; 
-    for (let s = 0; s < spaces; s++) {
-        rowStr += "  "; 
+    for (let s = 0; s < spaces; s++)
+         {
+        rowStr = rowStr + "  "; 
     }
 
     let rightLength = v; 
-    for (let j = 0; j < rightLength; j++) {
-        if (row <= N) {
-            if (j % 2 === 0) {
-                rowStr += (10 - v) + " ";
-            } else {
-                rowStr += v + " ";
+    for (let j = 0; j < rightLength; j++) 
+        {
+        if (row <= N) 
+            {
+            if (j % 2 === 0) 
+                {
+                rowStr = rowStr + (10 - v) + " ";
+            } else 
+                {
+                rowStr = rowStr + v + " ";
             }
-        } else {
-            if (j % 2 === 0) {
-                rowStr += v + " ";
-            } else {
-                rowStr += (10 - v) + " ";
+        } else
+             {
+            if (j % 2 === 0) 
+                {
+                rowStr = rowStr + v + " ";
+            } else 
+                {
+                rowStr = rowStr + (10 - v) + " ";
             }
         }
     }
