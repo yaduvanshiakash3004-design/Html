@@ -397,7 +397,7 @@ nav{
 }
 .parallelogram{
     width:240px;
-    height:260px;
+    height:250px;
     background:#c26add;
     transform:skew(-18deg);
     position:absolute;
@@ -406,11 +406,11 @@ nav{
 }
 .arrow-up{
     width:120px;
-    height:150px;
+    height:170px;
     background:#8b5cf6;
     position:absolute;
     left:1060px;
-    top:500px;
+    top:520px;
     
 }
 .arrow-up::before{
