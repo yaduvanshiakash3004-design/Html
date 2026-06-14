@@ -1,61 +1,55 @@
+const records = [];
+let idCounter = 101;
 
-function createPatientId() {
-    let id = 0;
-
-    return function () {
-        id++;
-        return id;
-    };
+function createRecord(name, problem) {
+    records.push({
+        patientCode: idCounter++,
+        patientName: name,
+        healthIssue: problem
+    });
 }
 
-const generateId = createPatientId();
+createRecord("Nikhil", "Fever");
+createRecord("Rahul", "Cold");
+createRecord("Aman", "Cough");
 
-let patients = [];
+function displayRecords() {
+    console.log("PATIENT DATABASE");
 
-function addPatient(name, disease) {
-    let patient = {
-        id: generateId(),
-        name: name,
-        disease: disease
-    };
+    for (let index = 0; index < records.length; index++) {
+        const entry = records[index];
 
-    patients.push(patient);
+        console.log(
+            `${entry.patientCode} - ${entry.patientName} (${entry.healthIssue})`
+        );
+    }
 }
 
-
-function operation(callback) {
-    callback();
+function getPatientByName(name) {
+    for (let index = 0; index < records.length; index++) {
+        if (records[index].patientName.toLowerCase() === name.toLowerCase()) {
+            return records[index];
+        }
+    }
+    return "Record Not Found";
 }
 
+function getPatientsByDisease(disease) {
+    const result = [];
 
-operation(() => addPatient("Nikhil", "Fever"));
-operation(() => addPatient("Rahul", "Cold"));
-operation(() => addPatient("Aman", "Cough"));
+    for (let index = 0; index < records.length; index++) {
+        if (records[index].healthIssue === disease) {
+            result.push(records[index]);
+        }
+    }
 
+    return result;
+}
 
+displayRecords();
 
-console.log("Patient List:");
+console.log("\nSearch Result:");
+console.log(getPatientByName("Rahul"));
 
-patients.map(patient => {
-    console.log(
-        "ID:", patient.id,
-        "| Name:", patient.name,
-        "| Disease:", patient.disease
-    );
-});
-
-
-let result = patients.find(
-    patient => patient.name === "Rahul"
-);
-
-console.log("\nSearched Patient:");
-console.log(result);
-
-
-let feverPatients = patients.filter(
-    patient => patient.disease === "Fever"
-);
-
-console.log("\nFever Patients:");
-console.log(feverPatients);
+console.log("\nFever Cases:");
+console.log(getPatientsByDisease("Fever"));
