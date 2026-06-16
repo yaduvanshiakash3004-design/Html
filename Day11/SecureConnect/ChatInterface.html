@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SecureConnect Dashboard</title>
+
+<link rel="stylesheet" href="ChatInterface.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+
+    <div class="sidebar">
+
+        <div class="logo">
+            <i class="fa-solid fa-shield-halved"></i>
+            SecureConnect
+        </div>
+
+        <ul>
+
+            <li class="active">
+                <i class="fa-solid fa-comment"></i>
+                Chats
+            </li>
+
+            <li>
+                <i class="fa-solid fa-users"></i>
+                Groups
+            </li>
+
+            <li>
+                <i class="fa-solid fa-phone"></i>
+                Calls
+            </li>
+
+            <li>
+                <i class="fa-solid fa-bell"></i>
+                Notifications
+            </li>
+
+            <li>
+                <i class="fa-solid fa-bookmark"></i>
+                Saved
+            </li>
+
+            <li>
+                <i class="fa-solid fa-gear"></i>
+                Settings
+            </li>
+
+        </ul>
+
+    </div>
+
+    <!-- Chat List -->
+
+    <div class="chat-list">
+
+        <div class="search">
+            <input type="text" placeholder="Search chats...">
+        </div>
+
+        <div class="chat-item active-chat">
+            <img src="https://i.pravatar.cc/50?img=1">
+            <div>
+                <h4>Alice Johnson</h4>
+                <p>Hello there!</p>
+            </div>
+        </div>
+
+        <div class="chat-item">
+            <img src="https://i.pravatar.cc/50?img=2">
+            <div>
+                <h4>Design Team</h4>
+                <p>Meeting at 5 PM</p>
+            </div>
+        </div>
+
+        <div class="chat-item">
+            <img src="https://i.pravatar.cc/50?img=3">
+            <div>
+                <h4>Michael Smith</h4>
+                <p>File Uploaded</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Chat Window -->
+
+    <div class="chat-window">
+
+        <div class="chat-header">
+
+            <div class="user-info">
+                <img src="https://i.pravatar.cc/50?img=1">
+                <div>
+                    <h3>Alice Johnson</h3>
+                    <span>Online</span>
+                </div>
+            </div>
+
+            <div class="header-icons">
+                <i class="fa-solid fa-phone"></i>
+                <i class="fa-solid fa-video"></i>
+                <i class="fa-solid fa-circle-info"></i>
+            </div>
+
+        </div>
+
+        <div class="messages">
+
+            <div class="message received">
+                Hey Akash 👋
+            </div>
+
+            <div class="message sent">
+                Hi Alice, How are you?
+            </div>
+
+            <div class="message received">
+                I'm doing great.
+            </div>
+
+            <div class="message sent">
+                Working on SecureConnect UI.
+            </div>
+
+        </div>
+
+        <div class="chat-input">
+
+            <i class="fa-regular fa-face-smile"></i>
+
+            <input type="text"
+            placeholder="Type a message...">
+
+            <i class="fa-solid fa-paperclip"></i>
+
+            <button>
+                <i class="fa-solid fa-paper-plane"></i>
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

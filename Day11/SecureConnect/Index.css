@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#070b16;
+    color:white;
+}
+
+/* Navbar */
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+}
+
+.logo{
+    font-size:22px;
+    font-weight:600;
+    color:#ffffff;
+}
+
+.logo i{
+    color:#7c4dff;
+}
+
+nav ul{
+    display:flex;
+    gap:30px;
+    list-style:none;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#d0d0d0;
+}
+
+nav ul li a:hover{
+    color:#7c4dff;
+}
+
+.btn{
+    background:#7c4dff;
+    border:none;
+    color:white;
+    padding:12px 24px;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+.btn:hover{
+    background:#6a3ff0;
+}
+
+.btn-outline{
+    background:transparent;
+    border:1px solid #7c4dff;
+    color:white;
+    padding:12px 24px;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+/* Hero */
+
+.hero{
+    min-height:80vh;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 8%;
+}
+
+.hero-text{
+    width:50%;
+}
+
+.hero-text h1{
+    font-size:70px;
+    line-height:1;
+}
+
+.hero-text h2{
+    font-size:65px;
+    color:#7c4dff;
+}
+
+.hero-text p{
+    margin-top:20px;
+    color:#cfcfcf;
+    max-width:500px;
+}
+
+.buttons{
+    margin-top:30px;
+    display:flex;
+    gap:15px;
+}
+
+.hero-image{
+    width:40%;
+}
+
+.mockup{
+    height:350px;
+    border-radius:20px;
+    border:1px solid #7c4dff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:#0d1224;
+    box-shadow:0 0 25px rgba(124,77,255,.4);
+}
+
+/* Features */
+
+.features{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+    padding:50px 8%;
+}
+
+.card{
+    background:#0d1224;
+    border:1px solid #1f2848;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+}
+
+.card i{
+    font-size:35px;
+    color:#7c4dff;
+    margin-bottom:15px;
+}
+
+.card p{
+    color:#cfcfcf;
+}
+
+/* Pricing */
+
+.pricing{
+    padding:80px 8%;
+}
+
+.pricing h2{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.plans{
+    display:flex;
+    gap:30px;
+    justify-content:center;
+}
+
+.plan{
+    width:300px;
+    background:#0d1224;
+    border:1px solid #1f2848;
+    padding:40px;
+    border-radius:20px;
+    text-align:center;
+}
+
+.plan h1{
+    margin:20px 0;
+}
+
+.premium{
+    border:2px solid #7c4dff;
+    box-shadow:0 0 20px rgba(124,77,255,.4);
+}
