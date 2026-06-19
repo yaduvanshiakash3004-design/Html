@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - SecureConnect</title>
+    <link rel="stylesheet" href="Chat_Interface.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<div class="app-shell">
+
+    <nav class="app-sidebar">
+        <div class="app-logo">
+            <i class="fa-solid fa-shield-halved"></i>
+        </div>
+        <ul class="nav-menu">
+            <li class="active"><i class="fa-solid fa-comment"></i><span>Chats</span></li>
+            <li><i class="fa-solid fa-users"></i><span>Groups</span></li>
+            <li><i class="fa-solid fa-phone"></i><span>Calls</span></li>
+            <li><i class="fa-solid fa-bell"></i><span>Alerts</span></li>
+            <li><i class="fa-solid fa-bookmark"></i><span>Saved</span></li>
+            <li class="menu-footer"><i class="fa-solid fa-gear"></i><span>Settings</span></li>
+        </ul>
+    </nav>
+
+    <section class="inbox-panel">
+        <div class="search-bar">
+            <input type="text" placeholder="Search direct messages...">
+        </div>
+        <div class="conversation-stack">
+            <div class="inbox-card active-item">
+                <img src="4.jpeg" alt="Avatar">
+                <div class="inbox-meta">
+                    <h4>Vishal</h4>
+                    <p>Hii</p>
+                </div>
+            </div>
+            <div class="inbox-card">
+                <img src="1.jpeg" alt="Avatar">
+                <div class="inbox-meta">
+                    <h4>Vivek Bhaiya</h4>
+                    <p>Call at 5 PM</p>
+                </div>
+            </div>
+            <div class="inbox-card">
+                <img src="2.jpeg" alt="Avatar">
+                <div class="inbox-meta">
+                    <h4>Muskan</h4>
+                    <p>File Uploaded</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="active-stage">
+        <header class="stage-header">
+            <div class="recipient-profile">
+                <img src="3.jpeg" alt="Vidit picture">
+                <div>
+                    <h3>Vidit Jaat</h3>
+                    <span class="badge-online">Online</span>
+                </div>
+            </div>
+            <div class="utility-tray">
+                <i class="fa-solid fa-phone"></i>
+                <i class="fa-solid fa-video"></i>
+                <i class="fa-solid fa-circle-info"></i>
+            </div>
+        </header>
+
+        <div class="stage-scroller">
+            <div class="text-node fallback-recv">Hey Akash 👋</div>
+            <div class="text-node fallback-sent">Hlw Vidit</div>
+            <div class="text-node fallback-recv">Kaha ho</div>
+            <div class="text-node fallback-sent">New York....</div>
+        </div>
+
+        <footer class="composer-container">
+            <i class="fa-regular fa-face-smile icon-btn"></i>
+            <input type="text" placeholder="Type a message...">
+            <i class="fa-solid fa-paperclip icon-btn"></i>
+            <button type="button" class="btn-send-main">
+                <i class="fa-solid fa-paper-plane"></i>
+            </button>
+        </footer>
+    </main>
+
+</div>
+
+</body>
+</html>
